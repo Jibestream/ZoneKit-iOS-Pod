@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ZoneKit-iOS-Pod/Classes/**/*'
   s.platform = :ios, '9.0'
   s.vendored_frameworks = 'ZoneKit-iOS-Pod/Frameworks/*.framework'
   
