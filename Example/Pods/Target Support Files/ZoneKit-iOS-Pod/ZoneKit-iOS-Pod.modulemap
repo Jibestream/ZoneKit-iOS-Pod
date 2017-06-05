@@ -1,0 +1,6 @@
+framework module ZoneKit_iOS_Pod {
+  umbrella header "ZoneKit-iOS-Pod-umbrella.h"
+
+  export *
+  module * { export * }
+}

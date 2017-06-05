@@ -1,0 +1,16 @@
+PODS:
+  - ZoneKit-iOS-Pod (0.1.0)
+
+DEPENDENCIES:
+  - ZoneKit-iOS-Pod (from `../`)
+
+EXTERNAL SOURCES:
+  ZoneKit-iOS-Pod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZoneKit-iOS-Pod: 22169ef1bc12284dcf015f1ecf22e561229e1653
+
+PODFILE CHECKSUM: d5951deb7913b627c5d7db5750ad0c6cdcf9bc24
+
+COCOAPODS: 1.2.0.beta.1
