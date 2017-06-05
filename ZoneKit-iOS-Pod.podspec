@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZoneKit-iOS-Pod'
-  s.version          = '1.0.0'
+s.version='1.0.0'
   s.summary          = 'The ZoneKit-iOS-Pod for the Jibestream iOS SDK.'
 
   s.description      = 'This CocoaPod provides the release version of the ZoneKit for the Jibestream iOS SDK.'
