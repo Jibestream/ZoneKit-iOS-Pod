@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZoneKit-iOS-Pod_Example' do
+  pod 'ZoneKit-iOS-Pod', :path => '../'
+
+  target 'ZoneKit-iOS-Pod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
