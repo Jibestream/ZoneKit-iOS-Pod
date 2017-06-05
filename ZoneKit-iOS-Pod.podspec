@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'This CocoaPod provides the release version of the ZoneKit for the Jibestream iOS SDK.'
 
-  s.homepage         = 'https://github.com/louieyune/ZoneKit-iOS-Pod'
+  s.homepage         = 'http://www.jibestream.com/'
   s.author           = { 'louie' => 'lyuen@jibestream.com' }
   s.source           = { :git => 'https://github.com/louieyune/ZoneKit-iOS-Pod.git', :tag => "#{s.version}" }
 
