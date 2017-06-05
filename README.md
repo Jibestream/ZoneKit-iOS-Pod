@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 To install, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AssetKit-iOS-Pod', :git => 'https://github.com/Jibestream/AssetKit-iOS-Pod.git'
+pod 'ZoneKit-iOS-Pod', :git => 'https://github.com/Jibestream/ZoneKit-iOS-Pod.git'
 ```
 
 For installing the first time run:
