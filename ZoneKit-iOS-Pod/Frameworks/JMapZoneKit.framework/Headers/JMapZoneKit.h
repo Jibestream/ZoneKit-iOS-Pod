@@ -11,6 +11,31 @@
 #import <JMapZoneKit/JMapZoneCollection.h>
 #import <JMapZoneKit/JMapZone.h>
 
+/**
+ *  The JMapZoneKitDelegate model.
+ */
+@protocol JMapZoneKitDelegate <NSObject>
+
+@optional
+/**
+ *  Delegate method for zones entered by moving object
+ *
+ *  @param movingObject referenced moving object
+ *  @param zones zones entered by moving object
+ */
+- (void) zonesEnteredByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nullable NSArray <JMapZone *>*)zones;
+
+/**
+ *  Delegate method for zones exited by moving object
+ *
+ *  @param movingObject referenced moving object
+ *  @param zones zones exited by moving object
+ */
+- (void) zonesExitedByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nullable NSArray <JMapZone *>*)zones;
+
+@end
+
+
 @interface JMapZoneKit : NSObject
 
 #pragma mark Zone Kit Initialization
@@ -19,6 +44,8 @@
  * Collection of all zones
  */
 @property (nonatomic, strong, readonly, nullable) JMapZoneCollection *zones;
+
+@property (nonatomic, weak, nullable) id<JMapZoneKitDelegate> delegate;
 
 /**
  *  Init With Controller : Contructor to create a JMapZoneKit with controller
@@ -132,5 +159,16 @@
  *  @param style optional JMapStyle object to set the styling of the zone on the map
  */
 - (void)drawPolygonOfZone:(nonnull JMapZone *)zone onMap:(nonnull JMapMap *)map withStyle:(nullable JMapStyle *)style;
+
+
+- (void)receiveAnimationComplete:(nonnull NSNotification *)notification;
+
+- (void)watchMovingObjects:(nonnull id <JMapZoneKitDelegate>)delegate;
+
+- (void)unwatchMovingObjects;
+
+//- (nonnull NSArray <JMapZone*> *)zonesEnteredByMovableItem:(nonnull JMapMovingObject *)movableItem;
+//
+//- (nonnull NSArray <JMapZone*> *)zonesExitedByMovableItem:(nonnull JMapMovingObject *)movableItem;
 
 @end
