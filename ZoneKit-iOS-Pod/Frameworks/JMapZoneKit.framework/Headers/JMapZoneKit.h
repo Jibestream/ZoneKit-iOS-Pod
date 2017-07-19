@@ -45,6 +45,9 @@
  */
 @property (nonatomic, strong, readonly, nullable) JMapZoneCollection *zones;
 
+/**
+ * The JMapZoneKitDelegate property
+ */
 @property (nonatomic, weak, nullable) id<JMapZoneKitDelegate> delegate;
 
 /**
@@ -160,15 +163,23 @@
  */
 - (void)drawPolygonOfZone:(nonnull JMapZone *)zone onMap:(nonnull JMapMap *)map withStyle:(nullable JMapStyle *)style;
 
-
+/**
+ *  Listener For Moving Object Animation Completion
+ *
+ *  @param notification NSNotification callback object
+ */
 - (void)receiveAnimationComplete:(nonnull NSNotification *)notification;
 
+/**
+ *  Method To Subscribe To Listening For Moving Object Animations
+ *
+ *  @param delegate JMapZoneKitDelegate passed in for triggering delegate callbacks
+ */
 - (void)watchMovingObjects:(nonnull id <JMapZoneKitDelegate>)delegate;
 
+/**
+ *  Method To Unsubscribe To Listening For Moving Object Animations
+ */
 - (void)unwatchMovingObjects;
-
-//- (nonnull NSArray <JMapZone*> *)zonesEnteredByMovableItem:(nonnull JMapMovingObject *)movableItem;
-//
-//- (nonnull NSArray <JMapZone*> *)zonesExitedByMovableItem:(nonnull JMapMovingObject *)movableItem;
 
 @end
