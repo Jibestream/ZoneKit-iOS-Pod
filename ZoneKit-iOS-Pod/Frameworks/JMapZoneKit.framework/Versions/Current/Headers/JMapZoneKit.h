@@ -23,7 +23,7 @@
  *  @param movingObject referenced moving object
  *  @param zones zones entered by moving object
  */
-- (void) zonesEnteredByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nullable NSArray <JMapZone *>*)zones;
+- (void) zonesEnteredByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nonnull NSArray <JMapZone *>*)zones;
 
 /**
  *  Delegate method for zones exited by moving object
@@ -31,7 +31,7 @@
  *  @param movingObject referenced moving object
  *  @param zones zones exited by moving object
  */
-- (void) zonesExitedByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nullable NSArray <JMapZone *>*)zones;
+- (void) zonesExitedByMovingObject:(nullable JMapMovingObject*)movingObject zones:(nonnull NSArray <JMapZone *>*)zones;
 
 @end
 
