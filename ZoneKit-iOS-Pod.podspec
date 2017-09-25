@@ -7,7 +7,7 @@ s.version='1.0.2'
 
   s.homepage         = 'http://www.jibestream.com/'
   s.author           = { 'louie' => 'lyuen@jibestream.com' }
-  s.source           = { :git => 'https://github.com/louieyune/ZoneKit-iOS-Pod.git', :tag => "#{s.version}" }
+  s.source           = { :git => 'https://github.com/Jibestream/ZoneKit-iOS-Pod', :tag => "#{s.version}" }
 
   s.ios.deployment_target = '9.0'
 
