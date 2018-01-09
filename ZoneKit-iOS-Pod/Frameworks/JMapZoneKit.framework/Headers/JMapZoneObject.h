@@ -1,6 +1,6 @@
 //
-//  JMapZone.h
-//  JMapZone
+//  JMapZoneObject.h
+//  JMapZoneObject
 //
 //  Created by Aaron Wong on 2017-04-04.
 //  Copyright © 2017 Jibestream. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <JMapCoreKit/JMapCoreKit.h>
 
-@interface JMapZone : JMapBaseModel
+@interface JMapZoneObject : JMapBaseModel
 
 /*!
  * Zone Name

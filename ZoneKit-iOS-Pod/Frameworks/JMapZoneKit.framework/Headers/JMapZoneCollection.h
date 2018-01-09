@@ -7,55 +7,55 @@
 //
 
 #import <JMapCoreKit/JMapCoreKit.h>
-#import <JMapZoneKit/JMapZone.h>
+#import "JMapZoneObject.h"
 
 @interface JMapZoneCollection : JMapBaseCollection
 
 /*!
  * Get all object in collection
  *
- * @return an array of JMapZone objects
+ * @return an array of JMapZoneObjects
  */
-- (nonnull NSArray <JMapZone *>*)getAll;
+- (nonnull NSArray <JMapZoneObject *>*)getAll;
 
 /*!
  * Get By External ID
  * @param externalId ID to search for
  *
- * @return An array of JMapZone objects associase to the external ID
+ * @return An array of JMapZoneObjects associase to the external ID
  */
-- (nonnull NSArray <JMapZone *>*)getByExternalId:(nonnull NSString *)externalId;
+- (nonnull NSArray <JMapZoneObject *>*)getByExternalId:(nonnull NSString *)externalId;
 
 /*!
- * Get JMapZone object by ID in collection
+ * Get JMapZoneObject by ID in collection
  * @param id ID to search for
  *
- * @return JMapZone associated to ID or a nil if JMapBaseModel does not exists
+ * @return JMapZoneObject associated to ID or a nil if JMapBaseModel does not exists
  */
-- (nullable JMapZone *)getById:(NSInteger)id;
+- (nullable JMapZoneObject *)getById:(NSInteger)id;
 
 /*!
- * Get JMapZones by name in collection
+ * Get JMapZoneObjects by name in collection
  * @param name String to search for in zone collections
  *
- * @return Array of JMapZone associated to name provided
+ * @return Array of JMapZoneObject associated to name provided
  */
-- (nonnull NSArray<JMapZone *>*)getByName:(nonnull NSString *)name;
+- (nonnull NSArray<JMapZoneObject *>*)getByName:(nonnull NSString *)name;
 
 /*!
- * Get JMapZones by wapoint in collection
+ * Get JMapZoneObjects by wapoint in collection
  * @param waypoint JMapWaypoint to search for in zone collections
  *
- * @return Array of JMapZone associated to waypoint provided
+ * @return Array of JMapZoneObject associated to waypoint provided
  */
-- (nonnull NSArray<JMapZone *>*)getByWaypoint:(nonnull JMapWaypoint *)waypoint;
+- (nonnull NSArray<JMapZoneObject *>*)getByWaypoint:(nonnull JMapWaypoint *)waypoint;
 
 /*!
- * Get JMapZones by map in collection
+ * Get JMapZoneObject by map in collection
  * @param map JMapMap to search for in zone collections
  *
- * @return Array of JMapZone associated to map object provided
+ * @return Array of JMapZoneObject associated to map object provided
  */
-- (nonnull NSArray<JMapZone *>*)getByMap:(nonnull JMapMap *)map;
+- (nonnull NSArray<JMapZoneObject *>*)getByMap:(nonnull JMapMap *)map;
 
 @end
