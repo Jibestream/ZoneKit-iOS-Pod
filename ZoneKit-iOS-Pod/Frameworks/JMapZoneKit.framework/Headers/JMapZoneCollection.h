@@ -9,16 +9,19 @@
 #import <JMapCoreKit/JMapCoreKit.h>
 #import "JMapZoneObject.h"
 
+/**
+ *  The JMapZoneCollection model
+ */
 @interface JMapZoneCollection : JMapBaseCollection
 
-/*!
+/**
  * Get all object in collection
  *
  * @return an array of JMapZoneObjects
  */
 - (nonnull NSArray <JMapZoneObject *>*)getAll;
 
-/*!
+/**
  * Get By External ID
  * @param externalId ID to search for
  *
@@ -26,7 +29,7 @@
  */
 - (nonnull NSArray <JMapZoneObject *>*)getByExternalId:(nonnull NSString *)externalId;
 
-/*!
+/**
  * Get JMapZoneObject by ID in collection
  * @param id ID to search for
  *
@@ -34,7 +37,7 @@
  */
 - (nullable JMapZoneObject *)getById:(NSInteger)id;
 
-/*!
+/**
  * Get JMapZoneObjects by name in collection
  * @param name String to search for in zone collections
  *
@@ -42,7 +45,7 @@
  */
 - (nonnull NSArray<JMapZoneObject *>*)getByName:(nonnull NSString *)name;
 
-/*!
+/**
  * Get JMapZoneObjects by wapoint in collection
  * @param waypoint JMapWaypoint to search for in zone collections
  *
@@ -50,7 +53,7 @@
  */
 - (nonnull NSArray<JMapZoneObject *>*)getByWaypoint:(nonnull JMapWaypoint *)waypoint;
 
-/*!
+/**
  * Get JMapZoneObject by map in collection
  * @param map JMapMap to search for in zone collections
  *

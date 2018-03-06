@@ -35,7 +35,9 @@
 
 @end
 
-
+/**
+ *  The JMapZone model
+ */
 @interface JMapZone : NSObject
 
 #pragma mark Zone Initialization
