@@ -67,7 +67,7 @@
  *
  *  @param completionHandler returns error if error has occured with network request
  */
-- (void)getZones:(nonnull __attribute__((noescape)) void(^)(JMapError* _Nullable error))completionHandler;
+- (void)getZones:(void(^)(JMapError* _Nullable error))completionHandler;
 
 #pragma mark Get With Zone Methods
 
