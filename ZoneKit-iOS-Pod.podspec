@@ -9,9 +9,9 @@ s.version='2.0.3'
   s.author           = { 'louie' => 'lyuen@jibestream.com' }
   s.source           = { :git => 'https://github.com/Jibestream/ZoneKit-iOS-Pod', :tag => "#{s.version}" }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.platform = :ios, '9.0'
-  s.vendored_frameworks = 'ZoneKit-iOS-Pod/Frameworks/*.framework'
+  s.platform = :ios, '10.0'
+  s.vendored_frameworks = 'ZoneKit-iOS-Pod/Frameworks/*.xcframework'
   
 end
