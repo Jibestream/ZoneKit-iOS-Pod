@@ -4,6 +4,22 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/JMapZone.h</key>
+		<data>
+		BDNHOR7lwYnNwWROdiUUMUu/PPw=
+		</data>
+		<key>Headers/JMapZoneCollection.h</key>
+		<data>
+		VEAnQYGtshBTSvUbvec60fslbG0=
+		</data>
+		<key>Headers/JMapZoneKit.h</key>
+		<data>
+		eXh9PVIjih79HpdPc7DqG0ZkU6c=
+		</data>
+		<key>Headers/JMapZoneObject.h</key>
+		<data>
+		dpkx6F6oHxTgGsYs3K1V9lNJX+A=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		m0F6lpKfxhnXGCXpF3eZvhm6MBg=
@@ -15,6 +31,50 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/JMapZone.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BDNHOR7lwYnNwWROdiUUMUu/PPw=
+			</data>
+			<key>hash2</key>
+			<data>
+			jWABu48IQfEOnwgmybGHjOMB3a5q5mmI2jath+h8VeQ=
+			</data>
+		</dict>
+		<key>Headers/JMapZoneCollection.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VEAnQYGtshBTSvUbvec60fslbG0=
+			</data>
+			<key>hash2</key>
+			<data>
+			F5qlwFO1UUAwEhuMp7h5t+v665WMYWNS3vGydEvukgI=
+			</data>
+		</dict>
+		<key>Headers/JMapZoneKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eXh9PVIjih79HpdPc7DqG0ZkU6c=
+			</data>
+			<key>hash2</key>
+			<data>
+			5iPtlT38mb9RjJGOCd9UhXYT6VwbGiEQdT2RBM0fuM0=
+			</data>
+		</dict>
+		<key>Headers/JMapZoneObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dpkx6F6oHxTgGsYs3K1V9lNJX+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			fdWJfuPP42X6e+4DXoJ+SMxONoi/Q1ixanSR0O80nfE=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
