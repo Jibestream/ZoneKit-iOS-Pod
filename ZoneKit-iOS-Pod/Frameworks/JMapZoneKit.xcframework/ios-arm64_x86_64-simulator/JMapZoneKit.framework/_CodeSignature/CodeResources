@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/JMapOffSetPolygonConfig.h</key>
+		<data>
+		Ay2ODsBt2hdjUunX0WEx4cDANLo=
+		</data>
 		<key>Headers/JMapZone.h</key>
 		<data>
 		It9uAt916Vzq3ryMBO5uw/UG4Dg=
@@ -31,6 +35,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/JMapOffSetPolygonConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yOh6mzYC7eEZPM3ICt349Wjb6rREf+O5wR1GELKSHgE=
+			</data>
+		</dict>
 		<key>Headers/JMapZone.h</key>
 		<dict>
 			<key>hash2</key>
