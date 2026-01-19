@@ -1,6 +1,6 @@
 framework module JMapZoneKit {
   umbrella header "JMapZoneKit.h"
-
   export *
+
   module * { export * }
 }

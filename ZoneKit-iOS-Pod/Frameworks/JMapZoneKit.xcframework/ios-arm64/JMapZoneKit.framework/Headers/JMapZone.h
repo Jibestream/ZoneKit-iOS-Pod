@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <JMapControllerKit/JMapController.h>
 #import "JMapZoneObject.h"
 #import "JMapZoneCollection.h"
+#import "JMapOffSetPolygonConfig.h"
 
 /**
  *  The JMapZoneDelegate model.
@@ -157,6 +159,16 @@
 - (nullable Polygon *)getPolygonOfZone:(nonnull JMapZoneObject *)zone onMap:(nonnull JMapMap *)map;
 
 /**
+ *  Get Polygon Of Zone With Offset
+ *
+ *  @param zone JMapZoneObject to get polygon from
+ *  @param map JMapMap object to get the polygon
+ *  @param offset offset value to expand the polygon (if > 0, expands outward from centroid)
+ *  @return a polygon object of the zone
+ */
+- (nullable Polygon *)getPolygonOfZone:(nonnull JMapZoneObject *)zone onMap:(nonnull JMapMap *)map offset:(float)offset;
+
+/**
  *  Draw Polygon Of Zone
  *
  *  @param zone JMapZoneObject to draw
@@ -164,6 +176,29 @@
  *  @param style optional JMapStyle object to set the styling of the zone on the map
  */
 - (void)drawPolygonOfZone:(nonnull JMapZoneObject *)zone onMap:(nonnull JMapMap *)map withStyle:(nullable JMapStyle *)style;
+
+/**
+ *  Draw Polygon Of Zone With Offset
+ *
+ *  @param zone JMapZoneObject to draw
+ *  @param map JMapMap object to draw the polygon
+ *  @param style optional JMapStyle object to set the styling of the zone on the map
+ *  @param offset offset value to expand the polygon (if > 0, expands outward from centroid)
+ */
+- (void)drawPolygonOfZone:(nonnull JMapZoneObject *)zone onMap:(nonnull JMapMap *)map withStyle:(nullable JMapStyle *)style offset:(float)offset;
+
+/**
+ *  Draw Polygon Of Zone With Stroke Config
+ *
+ *  Draws an inner filled polygon (using style) and an outer stroke-only polygon (using strokeConfig).
+ *  If strokeConfig is nil or offset <= 0, only draws the inner polygon (same as drawPolygonOfZone:onMap:withStyle:).
+ *
+ *  @param zone JMapZoneObject to draw
+ *  @param map JMapMap object to draw the polygon
+ *  @param style optional JMapStyle object to set the styling of the inner polygon on the map
+ *  @param strokeConfig optional JMapOffSetPolygonConfig object to configure the outer polygon stroke (if nil or offset <= 0, only inner polygon is drawn)
+ */
+- (void)drawPolygonOfZone:(nonnull JMapZoneObject *)zone onMap:(nonnull JMapMap *)map withStyle:(nullable JMapStyle *)style strokeConfig:(nullable JMapOffSetPolygonConfig *)strokeConfig;
 
 /**
  *  Listener For Moving Object Animation Completion
