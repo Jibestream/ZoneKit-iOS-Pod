@@ -12,5 +12,4 @@
 #import <JMapZoneKit/JMapZoneObject.h>
 #import <JMapZoneKit/JMapZone.h>
 
-
-
+#import <JMapZoneKit/JMapZoneLabelPlacementBuilder.h>

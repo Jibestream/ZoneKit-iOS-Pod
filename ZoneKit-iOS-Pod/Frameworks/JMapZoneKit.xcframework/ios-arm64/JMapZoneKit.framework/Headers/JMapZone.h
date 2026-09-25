@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <JMapControllerKit/JMapController.h>
+#import <JMapRenderingKit/JMapRenderingKit.h>
 #import "JMapZoneObject.h"
 #import "JMapZoneCollection.h"
 #import "JMapOffSetPolygonConfig.h"
@@ -218,5 +219,30 @@
  *  Method To Unsubscribe To Listening For Moving Object Animations
  */
 - (void)unwatchMovingObjects;
+
+/**
+ *  Zone label placements for every zone with geometry on a map.
+ *
+ *  Placement is zone geometry — grouping a zone's waypoints by their CMS tag, classifying the
+ *  group, and deriving an anchor, an orientation and the room the text has — so it belongs here,
+ *  with the zone data and the polygon maths it depends on. What comes back is plain data: hand it
+ *  to `JMapController.setZoneLabelPlacements:` and the SDK owns fitting, truncating, arbitrating
+ *  and drawing. Do not create labels for zones yourself; a label the host draws is invisible to the
+ *  arbitration that stops zone and unit labels colliding.
+ *
+ *  `setZoneLabelPlacements:` replaces the labels for the whole venue, so collect the placements for
+ *  every map of the venue and pass them in one call; passing one map's result drops every other
+ *  floor's labels. Returns an empty array until the zones have been loaded with `getZones:`.
+ *
+ *  @param map        The map to place on.
+ *  @param fontFamily Font family for the labels, or nil for the system font.
+ *  @param textColor  Text colour for the labels, or nil for the SDK's
+ *                    `JMapLabelOptions.zoneTextColor`.
+ *  @return Placements for this map, possibly several per zone when the CMS tags waypoint groups.
+ */
+- (nonnull NSArray<JMapZoneLabelPlacement *> *)getZoneLabelPlacementsOnMap:(nonnull JMapMap *)map
+                                                                fontFamily:(nullable NSString *)fontFamily
+                                                                 textColor:(nullable UIColor *)textColor
+    NS_SWIFT_NAME(zoneLabelPlacements(onMap:fontFamily:textColor:));
 
 @end
