@@ -9,7 +9,7 @@ s.version='3.0.0'
   s.author           = { 'louie' => 'lyuen@jibestream.com' }
   s.source           = { :git => 'https://github.com/Jibestream/ZoneKit-iOS-Pod', :tag => "#{s.version}" }
 
-  s.dependency "JMapiOSSDK"
+  s.dependency "JMapiOSSDK", "~> 6.0"
   s.platform = :ios, '15.0'
   s.vendored_frameworks = 'ZoneKit-iOS-Pod/Frameworks/*.xcframework'
   
